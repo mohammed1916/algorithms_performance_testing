@@ -1,5 +1,6 @@
 import random
 import timeit
+
 # Comb Sort Implementation
 def comb_sort(arr):
     gap = len(arr)
@@ -47,7 +48,7 @@ def performance_test_on_partially_sorted(sort_function, array_size, percent_sort
 
 # Test performance with different array sizes and degrees of sortedness
 array_sizes = [100, 500, 1000, 5000, 10000]
-percentages_sorted = [10, 30, 50, 70, 90]
+percentages_sorted = [0, 1, 2, 10, 30, 50, 70, 90]
 
 for size in array_sizes:
     for percent_sorted in percentages_sorted:
