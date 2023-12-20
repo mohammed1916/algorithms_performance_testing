@@ -1,3 +1,5 @@
+import random
+import timeit
 # Comb Sort Implementation
 def comb_sort(arr):
     gap = len(arr)
@@ -26,14 +28,26 @@ def gnome_sort(arr):
             arr[index], arr[index - 1] = arr[index - 1], arr[index]
             index -= 1
 
-# Test the algorithms with a sample array
-sample_array = [64, 34, 25, 12, 22, 11, 90]
-comb_sorted_array = sample_array.copy()
-gnome_sorted_array = sample_array.copy()
+# Function to perform performance testing
+def performance_test(sort_function, array_size):
+    # Generate a random array
+    arr = [random.randint(1, 1000) for _ in range(array_size)]
 
-comb_sort(comb_sorted_array)
-gnome_sort(gnome_sorted_array)
+    # Measure the execution time
+    start_time = timeit.default_timer()
+    sort_function(arr)
+    end_time = timeit.default_timer()
 
-print("Original Array:", sample_array)
-print("Comb Sorted Array:", comb_sorted_array)
-print("Gnome Sorted Array:", gnome_sorted_array)
+    return end_time - start_time
+
+# Test performance with different array sizes
+array_sizes = [100, 500, 1000, 5000, 10000]
+
+for size in array_sizes:
+    comb_time = performance_test(comb_sort, size)
+    gnome_time = performance_test(gnome_sort, size)
+
+    print(f"Array Size: {size}")
+    print(f"Comb Sort Time: {comb_time:.6f} seconds")
+    print(f"Gnome Sort Time: {gnome_time:.6f} seconds")
+    print("---")
