@@ -1,0 +1,100 @@
+Array Size: 100, Percent Sorted: 10%
+Comb Sort Time: 0.000033 seconds
+Gnome Sort Time: 0.000011 seconds
+---
+Array Size: 100, Percent Sorted: 30%
+Comb Sort Time: 0.000030 seconds
+Gnome Sort Time: 0.000010 seconds
+---
+Array Size: 100, Percent Sorted: 50%
+Comb Sort Time: 0.000029 seconds
+Gnome Sort Time: 0.000010 seconds
+---
+Array Size: 100, Percent Sorted: 70%
+Comb Sort Time: 0.000029 seconds
+Gnome Sort Time: 0.000010 seconds
+---
+Array Size: 100, Percent Sorted: 90%
+Comb Sort Time: 0.000030 seconds
+Gnome Sort Time: 0.000010 seconds
+---
+Array Size: 500, Percent Sorted: 10%
+Comb Sort Time: 0.000259 seconds
+Gnome Sort Time: 0.000055 seconds
+---
+Array Size: 500, Percent Sorted: 30%
+Comb Sort Time: 0.000258 seconds
+Gnome Sort Time: 0.000054 seconds
+---
+Array Size: 500, Percent Sorted: 50%
+Comb Sort Time: 0.000257 seconds
+Gnome Sort Time: 0.000039 seconds
+---
+Array Size: 500, Percent Sorted: 70%
+Comb Sort Time: 0.000257 seconds
+Gnome Sort Time: 0.000037 seconds
+---
+Array Size: 500, Percent Sorted: 90%
+Comb Sort Time: 0.000257 seconds
+Gnome Sort Time: 0.000037 seconds
+---
+Array Size: 1000, Percent Sorted: 10%
+Comb Sort Time: 0.000661 seconds
+Gnome Sort Time: 0.000078 seconds
+---
+Array Size: 1000, Percent Sorted: 30%
+Comb Sort Time: 0.000660 seconds
+Gnome Sort Time: 0.000079 seconds
+---
+Array Size: 1000, Percent Sorted: 50%
+Comb Sort Time: 0.000651 seconds
+Gnome Sort Time: 0.000074 seconds
+---
+Array Size: 1000, Percent Sorted: 70%
+Comb Sort Time: 0.000616 seconds
+Gnome Sort Time: 0.000074 seconds
+---
+Array Size: 1000, Percent Sorted: 90%
+Comb Sort Time: 0.000620 seconds
+Gnome Sort Time: 0.000074 seconds
+---
+Array Size: 5000, Percent Sorted: 10%
+Comb Sort Time: 0.004391 seconds
+Gnome Sort Time: 0.000381 seconds
+---
+Array Size: 5000, Percent Sorted: 30%
+Comb Sort Time: 0.004128 seconds
+Gnome Sort Time: 0.000356 seconds
+---
+Array Size: 5000, Percent Sorted: 50%
+Comb Sort Time: 0.004138 seconds
+Gnome Sort Time: 0.000364 seconds
+---
+Array Size: 5000, Percent Sorted: 70%
+Comb Sort Time: 0.004012 seconds
+Gnome Sort Time: 0.000343 seconds
+---
+Array Size: 5000, Percent Sorted: 90%
+Comb Sort Time: 0.003959 seconds
+Gnome Sort Time: 0.000343 seconds
+---
+Array Size: 10000, Percent Sorted: 10%
+Comb Sort Time: 0.008831 seconds
+Gnome Sort Time: 0.000668 seconds
+---
+Array Size: 10000, Percent Sorted: 30%
+Comb Sort Time: 0.009142 seconds
+Gnome Sort Time: 0.000686 seconds
+---
+Array Size: 10000, Percent Sorted: 50%
+Comb Sort Time: 0.008844 seconds
+Gnome Sort Time: 0.000693 seconds
+---
+Array Size: 10000, Percent Sorted: 70%
+Comb Sort Time: 0.008734 seconds
+Gnome Sort Time: 0.000677 seconds
+---
+Array Size: 10000, Percent Sorted: 90%
+Comb Sort Time: 0.008913 seconds
+Gnome Sort Time: 0.000691 seconds
+---
