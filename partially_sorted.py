@@ -4,7 +4,7 @@ import timeit
 # Comb Sort Implementation
 def comb_sort(arr):
     gap = len(arr)
-    shrink = 1.3
+    shrink = 30
     swapped = True
 
     while gap > 1 or swapped:
@@ -33,8 +33,22 @@ def gnome_sort(arr):
 def generate_partially_sorted_array(size, percent_sorted):
     arr = list(range(1, size + 1))
     num_elements_to_shuffle = int((100 - percent_sorted) / 100 * size)
-    random.shuffle(arr[:num_elements_to_shuffle])
+    
+    # Choose whether to shuffle towards the beginning or the middle
+    # if random.choice([True, False]):
+    #     # Shuffle a portion towards the middle
+    #     start_index = size // 4
+    #     end_index = start_index + num_elements_to_shuffle
+    #     random.shuffle(arr[start_index:end_index])
+    # else:
+    #     random.shuffle(arr[:num_elements_to_shuffle])
+            # Shuffle a portion towards the middle
+    start_index = size // 50
+    end_index = start_index + num_elements_to_shuffle
+    random.shuffle(arr[start_index:end_index])
+    
     return arr
+
 
 # Function to perform performance testing on partially sorted array
 def performance_test_on_partially_sorted(sort_function, array_size, percent_sorted):
@@ -47,15 +61,27 @@ def performance_test_on_partially_sorted(sort_function, array_size, percent_sort
     return end_time - start_time
 
 # Test performance with different array sizes and degrees of sortedness
-array_sizes = [100, 500, 1000, 5000, 10000]
+array_sizes = [100, 3000, 5000, 10000]
 percentages_sorted = [0, 1, 2, 10, 30, 50, 70, 90]
+
+# for size in array_sizes:
+#     for percent_sorted in percentages_sorted:
+#         comb_time = performance_test_on_partially_sorted(comb_sort, size, percent_sorted)
+#         gnome_time = performance_test_on_partially_sorted(gnome_sort, size, percent_sorted)
+
+#         print(f"Array Size: {size}, Percent Sorted: {percent_sorted}%")
+#         print(f"Comb Sort Time: {comb_time:.6f} seconds")
+#         print(f"Gnome Sort Time: {gnome_time:.6f} seconds")
+#         print("---")
+
+print("| **Array Size** | **Percent Sorted** | **Comb Sort Time** | **Gnome Sort Time** | **Better Performer** |")
+print("|-----------------|--------------------|--------------------|---------------------|-----------------------|")
 
 for size in array_sizes:
     for percent_sorted in percentages_sorted:
         comb_time = performance_test_on_partially_sorted(comb_sort, size, percent_sorted)
         gnome_time = performance_test_on_partially_sorted(gnome_sort, size, percent_sorted)
 
-        print(f"Array Size: {size}, Percent Sorted: {percent_sorted}%")
-        print(f"Comb Sort Time: {comb_time:.6f} seconds")
-        print(f"Gnome Sort Time: {gnome_time:.6f} seconds")
-        print("---")
+        better_performer = "Comb Sort" if comb_time < gnome_time else "Gnome Sort"
+
+        print(f"| {size} | {percent_sorted}% | {comb_time:.9f} seconds | {gnome_time:.9f} seconds | {better_performer} |")
