@@ -1,0 +1,20 @@
+Array Size: 100
+Comb Sort Time: 0.000081 seconds
+Gnome Sort Time: 0.000779 seconds
+---
+Array Size: 500
+Comb Sort Time: 0.000457 seconds
+Gnome Sort Time: 0.019234 seconds
+---
+Array Size: 1000
+Comb Sort Time: 0.000962 seconds
+Gnome Sort Time: 0.065089 seconds
+---
+Array Size: 5000
+Comb Sort Time: 0.005902 seconds
+Gnome Sort Time: 1.610509 seconds
+---
+Array Size: 10000
+Comb Sort Time: 0.012686 seconds
+Gnome Sort Time: 6.405603 seconds
+---
