@@ -43,11 +43,6 @@ def generate_partially_sorted_array(size, percent_sorted):
         random.shuffle(arr[start_index:end_index])
     else:
         random.shuffle(arr[:num_elements_to_shuffle])
-            # Shuffle a portion towards the middle
-    # start_index = size // 50
-    # end_index = start_index + num_elements_to_shuffle
-    # random.shuffle(arr[start_index:end_index])
-    
     return arr
 
 
@@ -65,15 +60,6 @@ def performance_test_on_partially_sorted(sort_function, array_size, percent_sort
 array_sizes = [100, 1000,1500,2000, 5000, 10000]
 percentages_sorted = [0, 1, 2, 10, 30, 50, 70, 90]
 
-# for size in array_sizes:
-#     for percent_sorted in percentages_sorted:
-#         comb_time = performance_test_on_partially_sorted(comb_sort, size, percent_sorted)
-#         gnome_time = performance_test_on_partially_sorted(gnome_sort, size, percent_sorted)
-
-#         print(f"Array Size: {size}, Percent Sorted: {percent_sorted}%")
-#         print(f"Comb Sort Time: {comb_time:.6f} seconds")
-#         print(f"Gnome Sort Time: {gnome_time:.6f} seconds")
-#         print("---")
 
 data = []
 for size in array_sizes:
